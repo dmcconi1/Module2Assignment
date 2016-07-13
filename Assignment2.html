@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment2.css" />
+ <script src="Js/Assignment2.js"></script>
+
+</head>
+
+<body>
+    <h1>Customer Order History Form</h1>
+    <hr><br>
+   
+        <select onchange="MenuChoice(value)" id="menu">
+            <option value="None">Please select an option</option>
+            <option value="customerlist">Customer Information List</option>
+            <option value="orderhistory">Customer Order History</option>
+            <option value="aboutpage">About Page</option>
+        </select>
+    <hr><br>    
+
+
+<section id="customerlist">
+    <h2>Customer Information List</h2><br>
+    
+    <div id="customerinfo"></div>
+</section>
+
+<section id="orderhistory">
+    <h2>Customer Order History</h2><br>
+    <button onclick="MenuChoice('customerlist')">Back</button><br>
+    <label>Please Enter a Customer ID: </label>
+    <input type="text" id="customerid">
+    <br>
+    <button onclick="OrderHistorybyInput(customerid)">Retrieve Customer's Order History</button>
+    <br>
+    <hr>
+    <br>
+    <label id="customerorder"></label>
+</section>
+
+
+<section id="aboutpage">
+    <h2>About Page</h2>
+    <h3>App Description:</h3><p>This app is designed to emulate a common database retrieval component found
+    in the customer order info database<br> of most web ordering and e-commmerce sites utilizing web services.<br><br>
+    This app was created by:<br><br>
+    David L. McConico<br>UAB - Collat School of Business<br>Masters of Management Information Systems<br>
+    <a href="https://www.linkedin.com/in/davidlmcconico" target="_blank">LinkedIn Profile</a></p>
+</section>
+
+
+
+
+<footer> <p> David L. McConico <br/> dmcconi1@uab.edu <br>
+
+
+
+
+</body>
+</html>
